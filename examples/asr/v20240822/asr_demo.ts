@@ -59,7 +59,7 @@ const request =  {
  /**
   * 识别音频的音频格式，支持wav、pcm、ogg-opus、speex、silk、mp3、m4a、aac、amr。
   */
- VoiceFormat: 'amr',
+ VoiceFormat: 'mp3',
  /**
   * 腾讯云项目 ID，废弃参数，填写0即可。
   * @deprecated
@@ -75,7 +75,7 @@ const request =  {
 
 注意：推荐使用 [腾讯云COS](https://cloud.tencent.com/document/product/436/38484) 来存储音频、生成URL并提交请求，此种方式会走内网下载音频，极大降低整体请求时延；并且不会产生外网和流量下行费用，可节约成本（COS桶权限需要设置公有读私有写，或URL设置时效访问签名）
   */
- Url: 'https://api.weixin.qq.com/cgi-bin/media/get?access_token=83_VKcHBNhD50RAzJGKRu3fRkuYJKh5WVrLxgAR33ZNQgqzvO6xeMJoN_f2bTg10XPHnVIdHAgVaipPUzhuIWcUtFhfSeuuU4dUb7za3fkB9dBKdgMyMAf002nUk3YXSZaAFAFAH&media_id=030FNmQ_apdvgrjLCJ9ODDK83NwfL041SkFZQtfPrL-fRXC_Z_sGtv3NFXeo6iqU',
+ Url: 'https://sis-sample-audio.obs.cn-north-1.myhuaweicloud.com/16k16bit.mp3',
  /**
   * 废弃参数，填写任意字符串即可。
   * @deprecated
